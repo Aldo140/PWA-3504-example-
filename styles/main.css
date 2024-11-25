@@ -1,0 +1,35 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif; /* Stylish font */
+    background: #f0f4f8; /* Lighter background for better contrast */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark text for contrast */
+    text-align: center; /* Center align text */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the main heading */
+h1 {
+    font-size: 4rem; /* Larger text for better visibility */
+    color: #4A90E2; /* Solid, strong color for text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle text shadow for contrast */
+    background: linear-gradient(90deg, #4A90E2, #50E3C2); /* Soft gradient background for text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Transparent text for gradient effect */
+    animation: glow 2.5s infinite alternate; /* Glow animation for a modern effect */
+}
+
+/* Glow animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #4A90E2, 0 0 20px #50E3C2;
+    }
+    100% {
+        text-shadow: 0 0 20px #50E3C2, 0 0 30px #4A90E2;
+    }
+}
+
